@@ -14,14 +14,14 @@ const userSchema = gql `
   }
 
   type Query {
-    users: [User]
-    user(id: ID!): User!
+    getUsers: [User]
+    getUserById(id: ID!): User!
   }
 
   type Mutation {
-    adicionaUser(nome: String!, ativo: Boolean!, email: String, role: String!): User!
-    atualizaUser(id: ID!, nome: String!, ativo: Boolean!, email: String, role: String!): User!
-    removeUser(id: ID!): ID!
+    insertNewUser(nome: String!, ativo: Boolean!, email: String, role: String!): User!
+    updateUserById(id: ID!, nome: String!, ativo: Boolean!, email: String, role: String!): User!
+    removeUserById(id: ID!): ID!
   }
 `
 

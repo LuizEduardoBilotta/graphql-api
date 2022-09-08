@@ -23,7 +23,7 @@ class UsersAPI extends RESTDataSource {
     return user; 
   }
 
-  async adicionaUser(user) {
+  async insertNewUser(user) {
     const users = await this.get('/users');
     user.id = users.lenght + 1;
     const role = await this.get(`/roles?type=${user.role}`);
@@ -35,7 +35,7 @@ class UsersAPI extends RESTDataSource {
     }
   }
 
-  async atualizaUser(novosDados) {
+  async updateUserById(novosDados) {
     const role = await this.get(`/roles?type=${novosDados.role}`);
     await this.put(`/users/${novosDados.id}`, { ...novosDados, role: role[0].id });
     
@@ -45,7 +45,7 @@ class UsersAPI extends RESTDataSource {
     });
   }
 
-  async removeUser(id) {
+  async removeUserById(id) {
     await this.delete(`/users/${id}`);
     return id;
   }
