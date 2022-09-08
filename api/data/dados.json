@@ -1,11 +1,11 @@
 {
   "users": [
     {
-      "id": 2,
-      "nome": "Ana Torre",
+      "id": 1,
+      "nome": "Gabriel Costa",
       "ativo": true,
-      "email": "a@a.com",
-      "role": 1
+      "email": "gabrielteste@gmail.com",
+      "role": 2
     },
     {
       "id": 2,
@@ -18,8 +18,8 @@
       "id": 3,
       "nome": "Flavia Lins",
       "ativo": true,
-      "email": "f@f.com",
-      "role": 1
+      "email": "flavinha@f.com",
+      "role": 3
     },
     {
       "id": 4,
