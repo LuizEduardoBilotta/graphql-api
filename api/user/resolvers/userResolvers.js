@@ -5,7 +5,7 @@ const userResolvers = {
   RolesType:{
     ESTUDANTE: "ESTUDANTE",
     DOCENTE: "DOCENTE",
-    COORDENACAO: "COORDENAÇÃO"
+    COORDENACAO: "COORDENACAO"
   },
   
   DateTime: new GraphQLScalarType({
@@ -22,7 +22,7 @@ const userResolvers = {
   },
   
   Mutation: {
-    insertNewUser: async(root, user, { dataSources }) => dataSources.usersAPI.insertNewUser(user),
+    insertNewUser: async(root, { user }, { dataSources }) => dataSources.usersAPI.insertNewUser(user),
     updateUserById: async(root, novosDados, { dataSources }) => dataSources.usersAPI.updateUserById(novosDados),
     removeUserById: async(root, { id }, { dataSources }) => dataSources.usersAPI.removeUserById(id)
   }
