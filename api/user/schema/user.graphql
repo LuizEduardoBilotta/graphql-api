@@ -37,8 +37,24 @@ const userSchema = gql `
 
   type Mutation {
     insertNewUser(user: userInput): User!
-    updateUserById(id: ID!, user: userInput): User!
-    removeUserById(id: ID!): ID!
+    updateUserById(id: ID!, user: userInput): updateUserResponse!
+    removeUserById(id: ID!): deleteUserResponse!
+  }
+
+  interface responseCustom {
+    code: Int!
+    message: String!
+  }
+
+  type deleteUserResponse implements responseCustom {
+    code: Int!
+    message: String!
+  }
+
+  type updateUserResponse implements responseCustom {
+    code: Int!
+    message: String!
+    user: User!
   }
 `
 
