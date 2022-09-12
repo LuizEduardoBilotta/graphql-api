@@ -1,13 +1,12 @@
 <h1 align="center">
-  <a href="./assets/GraphQL-Logo.png" title="files and folders icons">
-    <img src="./csv.png" alt="Banner partitioner-csv-file"/>
-  </a>
+    <img src="./assets/GraphQL-Logo.png" alt="Banner graphQL"/>
 </h1>
 
 <h2 align="center">graphql-api</h2>
-<p> 
-  API com CRUD desenvolvida durante o curso <strong>GraphQL: construindo uma API com Apollo Server</strong> da [Alura](https://cursos.alura.com.br/course/graphql-construindo-api-apollo-server).
-</p>
+
+  API com CRUD desenvolvida durante o curso <strong>Alura</strong>:</br>
+ 
+ - [GraphQL: construindo uma API com Apollo Server](https://cursos.alura.com.br/course/graphql-construindo-api-apollo-server)
 
 ## :dart: Índice
 - [Status](#status)
@@ -65,6 +64,24 @@ $ npm run server
 ```sh
 $ npm start
 ```
+
+## :repeat: Executando as requisições para o servidor
+1. *_Playground_ do Apollo-Server (Primeira opção):*
+Após iniciar o servidor, acesso o endereço `localhost:4000` em seu navegador conforme mostra a imagem abaixo. Depois é só montar suas queries conforme achar necessário.
+
+<h1 align="center">
+    <img src="./assets/apollo-server.gif" alt="Playground Apollo-Server"/>
+</h1>
+
+2. *Insomnia (Segunda opção):*
+Importe o arquivo `Insomnia-requests.json` no Insomnia, todas as requisições do CRUD estarão disponíveis para realizar seus testes conforme imagem abaixo.
+
+<h1 align="center">
+    <img src="./assets/insomnia.gif" alt="Playground Apollo-Server"/>
+</h1>
+
+## :floppy_disk: Dados
+Caso queira alterar os dados, acesse o diretório `api/data/dados.json` e realizar as alterações necessárias.
 
 ## :bookmark_tabs: Licença
 Este projeto está licenciado nos termos da licença MIT. Veja o arquivo [LICENSE](./LICENSE) para mais detalhes.
