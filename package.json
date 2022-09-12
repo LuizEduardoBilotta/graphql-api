@@ -2,11 +2,11 @@
   "name": "roteiro",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "./api/index.js",
   "scripts": {
-    "start": "nodemon -e js, json, graphql ./api/index.js",
-    "server": "npx json-server --watch api/data/dados.json",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node ./api/index.js",
+    "start:dev": "nodemon -e js, json, graphql ./api/index.js",
+    "server": "npx json-server --watch api/data/dados.json"
   },
   "repository": {
     "type": "git",
